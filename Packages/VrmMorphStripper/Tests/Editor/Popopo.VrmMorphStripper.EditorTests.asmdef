@@ -1,0 +1,26 @@
+{
+  "name": "Popopo.VrmMorphStripper.EditorTests",
+  "rootNamespace": "Popopo.VrmMorphStripper.Tests",
+  "references": [
+    "Popopo.VrmMorphStripper.Runtime",
+    "UniGLTF",
+    "UniGLTF.Utils",
+    "VRM10"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": [
+    "UNITY_INCLUDE_TESTS"
+  ],
+  "versionDefines": [],
+  "noEngineReferences": false,
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

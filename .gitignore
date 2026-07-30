@@ -1,0 +1,63 @@
+# Unity generated directories
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+
+# macOS Finder metadata
+.DS_Store
+
+# Asset Store tools
+/[Aa]ssets/AssetStoreTools*
+
+# Visual Studio / Rider generated files
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Unity build artifacts
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# Crash reports
+sysinfo.txt
+
+# Build-tool output
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# JetBrains IDEs
+.idea/
+
+# Visual Studio Code cache
+.vscode/
+
+# AI agent settings
+.uloop/
+.codex/
+
+# Assets, ProjectSettings folders and manifest files are ignored since they are for internal test project
+/Assets/
+/ProjectSettings/
+/Packages/manifest.json
+/Packages/packages-lock.json

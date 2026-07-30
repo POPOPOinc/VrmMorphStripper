@@ -1,0 +1,15 @@
+{
+  "name": "com.popopo.vrm-morph-stripper",
+  "version": "0.1.0",
+  "displayName": "VRM Morph Stripper",
+  "description": "Utilities for removing unused VRM 1.0 expression morph targets before Unity loading.",
+  "unity": "2022.3",
+  "license": "MIT",
+  "author": {
+    "name": "POPOPO Inc."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/POPOPOinc/VrmMorphStripper.git"
+  }
+}

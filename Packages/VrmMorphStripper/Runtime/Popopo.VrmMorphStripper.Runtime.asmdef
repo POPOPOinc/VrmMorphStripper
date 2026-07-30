@@ -1,0 +1,17 @@
+{
+  "name": "Popopo.VrmMorphStripper.Runtime",
+  "rootNamespace": "Popopo.VrmMorphStripper",
+  "references": [
+    "UniGLTF",
+    "VRM10"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
