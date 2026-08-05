@@ -1,9 +1,11 @@
 # VRM Morph Stripper
 
-VRM Morph Stripper is a Unity runtime utility for reducing the morph target data
-in a parsed VRM 1.0 model before it is loaded into Unity. It retains only the
-morph targets referenced by the expressions you choose, remaps the retained
-bindings, and removes unselected expressions.
+VRM Morph Stripper is a Unity runtime utility, built for use with
+[UniVRM](https://github.com/vrm-c/UniVRM), for reducing the morph target data
+in a parsed VRM 1.0 model before it is loaded into Unity. It operates on the
+`Vrm10Data` produced by UniVRM's parser, retaining only the morph targets
+referenced by the expressions you choose, remapping the retained bindings, and
+removing unselected expressions.
 
 Use it when an application only needs a limited set of facial expressions and
 does not need to keep the rest of a model's morph target payload in memory.
