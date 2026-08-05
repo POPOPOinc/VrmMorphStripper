@@ -39,7 +39,7 @@ this package's `package.json`. To pin a released version, append the Git ref
 after the query, for example:
 
 ```text
-https://github.com/POPOPOinc/VrmMorphStripper.git?path=/Packages/VrmMorphStripper#v0.1.0
+https://github.com/POPOPOinc/VrmMorphStripper.git?path=/Packages/VrmMorphStripper#v1.0.0
 ```
 
 The runtime assembly has `autoReferenced` enabled. Scripts compiled into

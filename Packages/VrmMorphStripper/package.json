@@ -1,6 +1,6 @@
 {
   "name": "com.popopo.vrm-morph-stripper",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "displayName": "VRM Morph Stripper",
   "description": "Utilities for removing unused VRM 1.0 expression morph targets before Unity loading.",
   "unity": "2022.3",
