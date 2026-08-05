@@ -10,9 +10,9 @@ removing unselected expressions.
 Use it when an application only needs a limited set of facial expressions and
 does not need to keep the rest of a model's morph target payload in memory.
 
-This repository contains the distributable Unity package at
-`Packages/VrmMorphStripper` and a minimal Unity project used for
-development and verification.
+The distributable Unity package is located at `Packages/VrmMorphStripper`.
+The Unity project used for development and verification is not included in
+this repository.
 
 ## Requirements
 
@@ -23,7 +23,8 @@ development and verification.
 
 ## Install
 
-Add UniVRM and this package to your project's `Packages/manifest.json`:
+After installing the required UniVRM packages separately, add this package to
+your project's `Packages/manifest.json`:
 
 ```json
 {
@@ -40,6 +41,12 @@ after the query, for example:
 ```text
 https://github.com/POPOPOinc/VrmMorphStripper.git?path=/Packages/VrmMorphStripper#v0.1.0
 ```
+
+The runtime assembly has `autoReferenced` enabled. Scripts compiled into
+Unity's predefined assemblies, such as `Assembly-CSharp`, can use the package
+without additional assembly configuration. If your scripts belong to a custom
+assembly definition, add `Popopo.VrmMorphStripper.Runtime` to that assembly
+definition's references.
 
 ## Sample
 
@@ -99,9 +106,29 @@ data; it does not optimize unrelated VRM or glTF content.
 
 The package includes Editor integration tests that document the expected
 stripping and import checks. No VRM model is distributed with this repository.
-To run them locally, set `SampleModelPath` in
-`Packages/VrmMorphStripper/Tests/Editor/Vrm10StripperSampleModelTests.cs` to
+To run them locally, copy `Packages/VrmMorphStripper` into the `Packages`
+directory of a Unity project as an embedded package, then set `SampleModelPath`
+in `Packages/VrmMorphStripper/Tests/Editor/Vrm10StripperSampleModelTests.cs` to
 the absolute path of a local fixture. Leave it empty to skip these tests.
+
+Embedded package tests are enabled automatically. If you instead install the
+package as a Git dependency and want Unity Test Runner to discover its tests,
+add the package name to your project's `Packages/manifest.json`:
+
+```json
+{
+  "dependencies": {
+    "com.popopo.vrm-morph-stripper": "https://github.com/POPOPOinc/VrmMorphStripper.git?path=/Packages/VrmMorphStripper"
+  },
+  "testables": [
+    "com.popopo.vrm-morph-stripper"
+  ]
+}
+```
+
+The Git-installed package keeps `SampleModelPath` empty, so the model-dependent
+tests are skipped unless you use an editable embedded copy and configure the
+fixture path as described above.
 
 The fixture may be VRM 1.0 or VRM 0.x: VRM 1.0 is parsed directly and VRM 0.x
 is migrated before the tests run. Choose a model with many custom expressions
